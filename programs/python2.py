@@ -112,9 +112,7 @@ def three(a):
     # How would you seperate a string into characters?
 
 def four(string1, string2):
-    a=string1.split
-    b=string2.split
-    return (''.join(''.join(x) for x in zip(a,b)))
+    return (''.join(''.join(x) for x in zip(string1,string2)))
     
 # string1 = "dog"
 # string2 = "cat"
