@@ -30,7 +30,7 @@
     # How does a for loop iterate through a string?
 
 def one(string):
-    return ""
+    return "".join([c*3 for c in string])
 
     # <QUESTION 2>
 
@@ -47,8 +47,16 @@ def one(string):
     # What operator will give you the remainder?
     # Use your CLI to access the Python documentation and get help manipulating strings - help(range).
 
-def two(num):
-    return False
+def two(num):             
+    if num == 0 or num == 1:
+        return False
+    elif num == 2:
+        return True
+    for n in range(2,num-1):
+        if num % n == 0:       
+            return False
+    else:                    
+        return True
 
     # <QUESTION 3>
 
@@ -65,7 +73,17 @@ def two(num):
     # What happens if you multiply a string by a number?
 
 def three(a):
-    return 1
+    n1 = int( "%s" % a )
+    n2 = int( "%s%s" % (a,a) )
+    n3 = int( "%s%s%s" % (a,a,a) )
+    n4 = int( "%s%s%s%s" % (a,a,a,a) )
+    return (n1+n2+n3+n4)
+    # b = a*2
+    # c = a*3
+    # d = a*4
+    # return(a+b+c+d)
+    # sum =(a+(a,a)+(a,a,a)+(a,a,a,a))
+    # return sum
 
     # <QUESTION 4>
 
@@ -94,8 +112,13 @@ def three(a):
     # How would you seperate a string into characters?
 
 def four(string1, string2):
-    return ""
-
+    a=string1.split
+    b=string2.split
+    return (''.join(''.join(x) for x in zip(a,b)))
+    
+# string1 = "dog"
+# string2 = "cat"
+# print(four(string1,string2))
     # <QUESTION 5>
 
     # Write a function to randomly generate a list with 5 even numbers between 100 and 200 inclusive.
@@ -111,7 +134,10 @@ def four(string1, string2):
     # The random module contains a function called randint.
 
 def five():
-    return []
+    import random 
+    res = [random.randrange(100, 200) for i in range(5)] 
+    return(str(res))
+    
 
     # <QUESTION 6>
 
@@ -130,6 +156,7 @@ def five():
     # There are no hints for this question.
     
 def six(string):
+    if 
     return False
 
     # <QUESTION 7>
