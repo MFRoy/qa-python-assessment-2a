@@ -207,7 +207,10 @@ def seven(a, b, c):
     # Use the cli to access the documentation help(str.replace)
 
 def eight(string, num):
-    return ""
+    a =(len(string)-num)
+    b =a/2 
+    return (str[:b]+str[b:])
+    
 
     # <QUESTION 9>
 
