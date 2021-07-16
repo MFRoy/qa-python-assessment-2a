@@ -156,8 +156,13 @@ def five():
     # There are no hints for this question.
     
 def six(string):
-    if 
-    return False
+    a = string.lower()
+    b = a[-2:]
+    for char in b:
+        if b==('py'):
+            return True
+        else:
+            return False
 
     # <QUESTION 7>
 
