@@ -135,8 +135,10 @@ def four(string1, string2):
 
 def five():
     import random 
-    res = [random.randrange(100, 200) for i in range(5)] 
-    return(str(res))
+    randomlist = random.sample(range(100, 200, 2), 5)
+    return randomlist
+    # res = [random.randrange(100, 200) for i in range(5)] 
+    # return(str(res))
     
 
     # <QUESTION 6>
