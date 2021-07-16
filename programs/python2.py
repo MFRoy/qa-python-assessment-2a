@@ -242,4 +242,8 @@ def nine(string1, string2):
     # Think about nesting for loops.
 
 def ten(a, b):
-    return []
+    lists = [[0 for column in range(a)] for row in range(b)]
+    for row in range(b):
+        for column in range(a):
+           lists[row][column]= row*column
+    return(lists)
